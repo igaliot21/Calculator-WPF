@@ -1,0 +1,43 @@
+﻿<Application x:Class="Calculator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="ResultColorBk" Color="Black" />
+        <SolidColorBrush x:Key="ResultColorFg" Color="LimeGreen" />
+        <SolidColorBrush x:Key="NumberColorBk" Color="#444" />
+        <SolidColorBrush x:Key="NumberColorFg" Color="White" />
+        <SolidColorBrush x:Key="OperationColorBk" Color="Orange" />
+        <SolidColorBrush x:Key="OperationColorFg" Color="White" />
+        <SolidColorBrush x:Key="MiscColorBk" Color="DarkGray" />
+        <SolidColorBrush x:Key="MiscColorFg" Color="Black" />
+
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="{StaticResource NumberColorFg}"/>
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="NumberButtonStyle">
+            <Setter Property="Background" Value="{StaticResource NumberColorBk}"/>
+            <Setter Property="Foreground" Value="{StaticResource NumberColorFg}"/>
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="Margin" Value="5" />            
+        </Style>
+        <Style TargetType="Button" x:Key="OperationButtonStyle">
+            <Setter Property="Background" Value="{StaticResource OperationColorBk}"/>
+            <Setter Property="Foreground" Value="{StaticResource NumberColorFg}"/>
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="Margin" Value="5" />            
+        </Style>
+        <Style TargetType="Button" x:Key="MiscButtonStyle">
+            <Setter Property="Background" Value="{StaticResource MiscColorBk}"/>
+            <Setter Property="Foreground" Value="{StaticResource MiscColorFg}"/>
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="Margin" Value="5" />            
+        </Style>        
+        
+        
+    </Application.Resources>
+</Application>
