@@ -14,7 +14,6 @@
         <SolidColorBrush x:Key="MiscColorFg" Color="Black" />
 
         <Style TargetType="Button">
-            <Setter Property="Foreground" Value="{StaticResource NumberColorFg}"/>
             <Setter Property="FontSize" Value="40" />
             <Setter Property="Margin" Value="5" />
         </Style>
@@ -22,8 +21,6 @@
         <Style TargetType="Button" x:Key="NumberButtonStyle">
             <Setter Property="Background" Value="{StaticResource NumberColorBk}"/>
             <Setter Property="Foreground" Value="{StaticResource NumberColorFg}"/>
-            <Setter Property="FontSize" Value="40" />
-            <Setter Property="Margin" Value="5" />            
         </Style>
         <Style TargetType="Button" x:Key="OperationButtonStyle">
             <Setter Property="Background" Value="{StaticResource OperationColorBk}"/>
